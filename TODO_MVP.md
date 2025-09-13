@@ -6,11 +6,11 @@ This file outlines all phases & steps to bring the MVP to completion.
 
 ## Phase 0 — Foundations (Week 0–1)
 
-- [ ] Repo setup (monorepo or split: `frontend/`, `backend/`).
-- [ ] Initialize FastAPI backend.
-- [ ] Initialize SvelteKit frontend.
-- [ ] Add Postgres + Chroma (Docker Compose).
-- [ ] Basic REST endpoint: `upload_pdf`.
+- [x] Repo setup (monorepo or split: `frontend/`, `backend/`).
+- [x] Initialize FastAPI backend.
+- [x] Initialize SvelteKit frontend.
+- [x] Add Postgres + Chroma (Docker Compose).
+- [x] Basic REST endpoint: `upload_pdf`.
 
 ---
 
