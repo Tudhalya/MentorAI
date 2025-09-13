@@ -1,0 +1,137 @@
+# ========= Monorepo root .gitignore (MentorAI) =========
+# Keep lockfiles tracked (poetry.lock, pnpm-lock.yaml), only ignore build/artifacts and local env/state.
+
+# ---- OS & Editor junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+Icon?
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+*~
+
+# VS Code settings (allow common project files)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+# Others
+.vscode-test/
+.history/
+
+# ---- Environment files ----
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.test
+.env.local
+.envrc
+
+# ---- Logs ----
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- Node / Frontend (SvelteKit + Vite) ----
+node_modules/
+.dist/
+dist/
+coverage/
+.nyc_output/
+.eslintcache
+.parcel-cache/
+.cache/
+
+# SvelteKit outputs (in any package)
+.svelte-kit/
+/build/
+.output/
+.vercel/
+.netlify/
+.wrangler/
+
+# Vite timestamped config cache
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Playwright artifacts
+playwright-report/
+playwright/.cache/
+playwright/.reports/
+.test-results/
+test-results/
+
+# ---- Python / Poetry (backend) ----
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging / build
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+MANIFEST
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.dmypy.json
+typecheck.json
+.pyright/
+.ruff_cache/
+
+# ---- Docker & local runtime state ----
+.docker/
+**/.docker/
+# Common local data dirs (ensure not used for source)
+.tmp/
+tmp/
+.temp/
+logs/
+
+# ---- Databases & local artifacts ----
+*.sqlite
+*.sqlite3
+*.db
+
+# ---- OS-specific shell scripts cache ----
+*.bat~
+*.ps1~
+
+# --- Claude AI ---
+.claude/
+
+# ========= End =========
